@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Simple Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A Simple Calculator">
+  <meta name="author" content="Heiko Geißler">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>A Simple Calculator</h1>
+    <h2>An example of reactive calculation</h2>
+    <p>Heiko Geißler<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Purpose Of The App</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The app should show some possibilies of the shiny.</li>
+<li>The formula for the numbers and operators will be shown below the input fields.</li>
+<li>In this formula will show some (actual unnecessary) paranthesises for better readability.</li>
+<li>Also the result of the calculation will be shown.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Operators</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>There are the basic operation &#39;+&#39;, &#39;-&#39;, &#39;*&#39; and &#39;/&#39; in this calculator</li>
+<li>You can input 3 numbers. All numbers have to be present.</li>
+<li>The paranthesis are not part of this example app. </li>
+<li>The &#39;*&#39; and &#39;/&#39; will be evaluate first.</li>
+</ul>
+
+<pre><code class="r">   3+4*3
+</code></pre>
+
+<pre><code>## [1] 15
+</code></pre>
+
+<ul>
+<li>A division by zero will result in a zero not in an exception</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Additional Operations</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>You can apply some additional operations.</li>
+<li>These are &quot;square&quot;, &quot;square root&quot;, &quot;cube&quot; and &quot;cube root&quot;.</li>
+<li>The roots will be shown as exponentiation. for example the &quot;cube root&quot; will be shown as </li>
+</ul>
+
+<pre><code class="r">  2^(1/3)
+</code></pre>
+
+<pre><code>## [1] 1.259921
+</code></pre>
+
+<ul>
+<li>These operators will be calculate before the normal operators.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Special Operations</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Here are another sample for operations.</li>
+<li>These are &quot;round&quot;, &quot;DIV&quot; and &quot;MOD&quot;.</li>
+<li>All of these operations need an additional value as input.</li>
+<li>This value can be choosen in the field jus right beside the special operations.</li>
+<li>In the formula, the &quot;DIV&quot; and &quot;MOD&quot; will be shown in the R style:</li>
+</ul>
+
+<pre><code class="r">  # DIV
+  5 %% 3
+</code></pre>
+
+<pre><code>## [1] 2
+</code></pre>
+
+<pre><code class="r">  # MOD
+  5 %/% 3
+</code></pre>
+
+<pre><code>## [1] 1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Purpose Of The App'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Operators'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Additional Operations'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Special Operations'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
